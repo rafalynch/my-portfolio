@@ -1,0 +1,24 @@
+.embla__viewport {
+  display: flex;
+}
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+.embla__prev,
+.embla__next {
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.card_container {
+  display: flex;
+  justify-content: center;
+}

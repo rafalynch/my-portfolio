@@ -1,0 +1,20 @@
+.rectangle {
+  margin: 25px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  padding: 15px;
+  padding-right: 20px;
+  font-size: 45px;
+  font-weight: 100;
+  border: 2px solid #000000;
+  transform: skew(-15deg);
+  box-shadow: -10px -10px 0 -2px #ffffff, -10px -10px 0 0 black;
+}
+
+@media (min-width: 600px) {
+  .rectangle {
+    font-size: 56px;
+  }
+}

@@ -1,0 +1,48 @@
+.rectangle {
+  background-color: #ffffff;
+  margin: 25px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  padding: 0;
+  font-size: 42px;
+  border: 2px solid #000000;
+  box-shadow: 15px 15px 0 -2px #ffffff, 15px 15px 0 0 black;
+}
+@media (min-width: 600px) {
+  .rectangle {
+    width: 50%;
+  }
+}
+.image {
+  border-bottom: solid 2px;
+  width: 100%;
+  object-fit: fill;
+}
+.info {
+  padding: 15px;
+}
+.info__title {
+  margin: 0;
+  font-size: 26px;
+}
+.info__description {
+  font-size: 12px;
+  height: 80px;
+}
+.info__links {
+  display: flex;
+  justify-content: space-around;
+}
+.button {
+  text-decoration: none;
+  border: solid 1px;
+  padding: 4px 10px;
+  font-size: 15px;
+  margin: 5px;
+  color: black;
+}
+.button:hover {
+  background-color: lightgray;
+}
