@@ -1,5 +1,6 @@
 .embla__viewport {
   display: flex;
+  width: 100%;
 }
 .embla {
   overflow: hidden;
@@ -17,6 +18,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: black;
+  margin: 15px;
+  padding: 0;
+  max-width: 25px;
 }
 .card_container {
   display: flex;
