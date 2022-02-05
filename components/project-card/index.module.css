@@ -12,7 +12,9 @@
 }
 @media (min-width: 600px) {
   .rectangle {
-    width: 50%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 .image {
@@ -20,8 +22,23 @@
   width: 100%;
   object-fit: fill;
 }
+@media (min-width: 600px) {
+  .image {
+    height: 100%;
+    object-fit: cover;
+    border-bottom: initial;
+    border-right: solid 2px;
+  }
+}
 .info {
+  display: grid;
   padding: 15px;
+  height: 230px;
+}
+@media (min-width: 600px) {
+  .info {
+    width: 250px;
+  }
 }
 .info__title {
   margin: 0;
@@ -29,11 +46,11 @@
 }
 .info__description {
   font-size: 12px;
-  height: 80px;
 }
 .info__links {
   display: flex;
   justify-content: space-around;
+  align-self: end;
 }
 .button {
   text-decoration: none;

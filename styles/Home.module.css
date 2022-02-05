@@ -8,6 +8,7 @@
   display: grid;
   justify-items: center;
   background-color: #bfceff;
+  padding-bottom: 40px;
 }
 .about_me__body {
   display: grid;
@@ -22,8 +23,21 @@
 }
 .portfolio {
   background-color: #fffeca;
+  padding-bottom: 40px;
 }
 .portfolio__title {
   display: flex;
   justify-content: center;
+}
+.contact {
+  display: grid;
+  justify-items: center;
+  background-color: #a9e49e;
+  padding-bottom: 40px;
+}
+.footer {
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+  background-color: #464646;
 }

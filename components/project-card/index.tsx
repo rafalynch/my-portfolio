@@ -16,10 +16,10 @@ export default function ProjectCard(props: Props) {
         <h3 className={styles.info__title}>{project.title}</h3>
         <p className={styles.info__description}>{project.description}</p>
         <div className={styles.info__links}>
-          <a href={project.demoLink} className={styles.button}>
+          <a target="_blank" href={project.demoLink} className={styles.button}>
             DEMO
           </a>
-          <a href={project.repoLink} className={styles.button}>
+          <a target="_blank" href={project.repoLink} className={styles.button}>
             REPO
           </a>
         </div>

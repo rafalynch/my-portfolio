@@ -6,6 +6,9 @@ import LongText from "../components/long-text";
 import ProfilePic from "../components/profile-pic";
 import ProjectLayout from "../components/project-layout";
 import styles from "../styles/Home.module.css";
+import ContactBody from "../components/contact-body";
+import LogoFooter from "../components/logo-footer";
+import MyCv from "../components/my-cv";
 
 const Home: NextPage = () => {
   return (
@@ -40,6 +43,7 @@ const Home: NextPage = () => {
               </p>
             </LongText>
           </div>
+          <MyCv></MyCv>
         </section>
         <section className={styles.portfolio}>
           <div className={styles.portfolio__title}>
@@ -47,12 +51,14 @@ const Home: NextPage = () => {
           </div>
           <ProjectLayout></ProjectLayout>
         </section>
-        <section>
+        <section className={styles.contact}>
           <Title>Contact</Title>
+          <ContactBody></ContactBody>
         </section>
       </main>
-
-      <footer></footer>
+      <footer className={styles.footer}>
+        <LogoFooter />
+      </footer>
     </div>
   );
 };
