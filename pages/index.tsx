@@ -102,7 +102,7 @@ const Home: NextPage = () => {
             <ProfilePic></ProfilePic>
             <LongText>
               <p>
-                Hello! I'm Rafa Lynch, a web developer from Buenos Aires,
+                Hello! I&apos;m Rafa Lynch, a web developer from Buenos Aires,
                 Argentina. I have a passion for clean and well written code and
                 for creating amazing user experiences.
               </p>
