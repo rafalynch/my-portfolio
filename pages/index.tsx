@@ -111,8 +111,8 @@ const Home: NextPage = () => {
                 learner with high attention to detail.
               </p>
               <p>
-                I am interested in working with positive people who contribute
-                to the improvement of my skills.
+                I am interested in working with positive people who can
+                contribute to the improvement of my skills.
               </p>
             </LongText>
           </div>
