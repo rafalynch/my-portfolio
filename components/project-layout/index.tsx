@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectCarousel from "../project-carousel/ProjectCarousel";
 import { Project } from "../../types";
-import styles from "./index.module.css";
 import lostPetsPic from "../../public/lost-pets.png";
 import misCuentasPic from "../../public/mis-cuentas.jpg";
 import piedraPapelTijeraPic from "../../public/piedra-papel-tijera.jpg";
@@ -25,7 +24,7 @@ export default function ProjectLayout() {
       repoLink: "https://github.com/rafalynch/alkemy-budget-challenge",
     },
     {
-      image: misCuentasPic,
+      image: piedraPapelTijeraPic,
       title: "Piedra, papel o tijera",
       description:
         "This is a simple game of Piedra, Papel o Tijera. It was made using Firebase Realtime Database, allowing live multiplayer experience and game rooms",
