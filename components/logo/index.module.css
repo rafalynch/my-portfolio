@@ -13,7 +13,7 @@
   box-shadow: -10px -10px 0 -2px #ffffff, -10px -10px 0 0 black;
 }
 
-@media (min-width: 600px) {
+@media (min-device-width: 1080px) {
   .rectangle {
     font-size: 56px;
   }

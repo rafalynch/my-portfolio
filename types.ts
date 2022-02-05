@@ -1,5 +1,5 @@
 export interface Project {
-  image: string;
+  image: StaticImageData;
   title: string;
   description: string;
   demoLink: string;

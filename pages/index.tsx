@@ -103,16 +103,16 @@ const Home: NextPage = () => {
             <LongText>
               <p>
                 Hello! I'm Rafa Lynch, a web developer from Buenos Aires,
-                Argentina. I have passion for well written and clean code and
-                creating amazing user experiences.
+                Argentina. I have a passion for clean and well written code and
+                for creating amazing user experiences.
               </p>
               <p>
-                I consider myself a team worker, problem solver and fast learner
-                with high attention to detail.
+                I consider myself a team worker, a problem solver and a fast
+                learner with high attention to detail.
               </p>
               <p>
-                I am interested in working with positive people who allow me to
-                develop my skills.
+                I am interested in working with positive people who contribute
+                to the improvement of my skills.
               </p>
             </LongText>
           </div>

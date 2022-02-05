@@ -19,8 +19,8 @@
   background-color: lightgray;
 }
 
-@media (min-width: 600px) {
+@media (min-device-width: 1080px) {
   .rectangle {
-    width: 30%;
+    width: 15%;
   }
 }

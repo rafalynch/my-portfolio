@@ -14,7 +14,7 @@
   box-shadow: 15px 15px 0 -2px #ffffff, 15px 15px 0 0 black;
 }
 
-@media (min-width: 600px) {
+@media (min-device-width: 1080px) {
   .rectangle {
     width: 50%;
   }
