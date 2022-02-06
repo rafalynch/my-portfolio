@@ -34,9 +34,10 @@ export default function ProjectCarousel(props: Props) {
       className={styles.embla__viewport}
       tabIndex={1}
       onKeyDownCapture={handleKey}
-      onClick={scrollPrev}
     >
-      <button className={styles.embla__prev}>{"<"}</button>
+      <button className={styles.embla__prev} onClick={scrollPrev}>
+        {"<"}
+      </button>
       <div className={styles.embla} ref={emblaRef}>
         <div className={styles.embla__container}>
           {projects.map((project) => {
