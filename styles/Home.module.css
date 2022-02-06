@@ -7,7 +7,7 @@
 .about_me {
   display: grid;
   justify-items: center;
-  background-color: #bfceff;
+  background-color: #006b5f;
   padding-bottom: 40px;
 }
 .about_me__body {
@@ -22,7 +22,7 @@
   }
 }
 .portfolio {
-  background-color: #fffeca;
+  background-color: #c6a58a;
   padding-bottom: 40px;
 }
 .portfolio__title {
@@ -32,7 +32,7 @@
 .contact {
   display: grid;
   justify-items: center;
-  background-color: #a9e49e;
+  background-color: #a6ccba;
   padding-bottom: 40px;
 }
 .footer {
