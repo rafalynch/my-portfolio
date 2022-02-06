@@ -11,7 +11,7 @@
   text-align: justify;
 
   border: 2px solid #000000;
-  box-shadow: 15px 15px 0 -2px #ffffff, 15px 15px 0 0 black;
+  box-shadow: 15px 15px 0 -2px #d4d4d4, 15px 15px 0 0 black;
 }
 
 @media (min-device-width: 1080px) {

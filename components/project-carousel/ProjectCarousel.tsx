@@ -20,11 +20,23 @@ export default function ProjectCarousel(props: Props) {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
+  const handleKey = (t: any) => {
+    if (t.code === "ArrowRight") {
+      scrollNext();
+    }
+    if (t.code === "ArrowLeft") {
+      scrollPrev();
+    }
+  };
+
   return (
-    <div className={styles.embla__viewport}>
-      <button className={styles.embla__prev} onClick={scrollPrev}>
-        {"<"}
-      </button>
+    <div
+      className={styles.embla__viewport}
+      tabIndex={1}
+      onKeyDownCapture={handleKey}
+      onClick={scrollPrev}
+    >
+      <button className={styles.embla__prev}>{"<"}</button>
       <div className={styles.embla} ref={emblaRef}>
         <div className={styles.embla__container}>
           {projects.map((project) => {
