@@ -2,6 +2,7 @@ import React, { useCallback } from "react";
 import ProjectCard from "../project-card";
 import { Project } from "../../types";
 import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import styles from "./index.module.css";
 
 interface Props {
@@ -9,7 +10,7 @@ interface Props {
 }
 
 export default function ProjectCarousel(props: Props) {
-  const [emblaRef, emblaApi] = useEmblaCarousel();
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const { projects } = props;
 
   const scrollPrev = useCallback(() => {
@@ -30,11 +31,7 @@ export default function ProjectCarousel(props: Props) {
   };
 
   return (
-    <div
-      className={styles.embla__viewport}
-      tabIndex={1}
-      onKeyDownCapture={handleKey}
-    >
+    <div className={styles.embla__viewport} onKeyDownCapture={handleKey}>
       <button className={styles.embla__prev} onClick={scrollPrev}>
         {"<"}
       </button>
