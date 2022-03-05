@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 
-export default function SocialMediaLink(props: any) {
+function SocialMediaLink(props: any, ref: any) {
   return (
-    <div className={styles.rectangle}>
+    <div ref={ref} className={styles.rectangle}>
       <div className={styles.icon}>
         <Image
           objectFit="cover"
@@ -19,3 +19,5 @@ export default function SocialMediaLink(props: any) {
     </div>
   );
 }
+
+export default React.forwardRef(SocialMediaLink);

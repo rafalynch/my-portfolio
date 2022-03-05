@@ -1,3 +1,4 @@
+import { useRef, useEffect } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Logo from "../components/logo";
@@ -9,8 +10,19 @@ import styles from "../styles/Home.module.css";
 import ContactBody from "../components/contact-body";
 import LogoFooter from "../components/logo-footer";
 import MyCv from "../components/my-cv";
+import { gsap } from "gsap";
 
 const Home: NextPage = () => {
+  let aboutMe: any = useRef();
+
+  useEffect(() => {
+    gsap.from(aboutMe, {
+      duration: 1,
+      opacity: 0,
+      translateY: "10%",
+    });
+  }, []);
+
   return (
     <div>
       <Head>
@@ -98,7 +110,7 @@ const Home: NextPage = () => {
         </header>
         <section className={styles.about_me}>
           <Title>About me</Title>
-          <div className={styles.about_me__body}>
+          <div ref={(el) => (aboutMe = el)} className={styles.about_me__body}>
             <ProfilePic></ProfilePic>
             <LongText>
               <p>
