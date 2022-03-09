@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./index.module.css";
 import { Project } from "../../types";
 import Image from "next/image";
@@ -13,12 +13,14 @@ export default function ProjectCard(props: Props) {
 
   return (
     <div className={styles.rectangle}>
-      <Image
-        className={styles.image}
-        layout={"fill"}
-        src={project.image}
-        alt="project-image"
-      />
+      <div className={styles.image}>
+        <Image
+          layout="fill"
+          objectFit="cover"
+          src={project.image}
+          alt="project-image"
+        />
+      </div>
 
       <div className={styles.info}>
         <h3 className={styles.info__title}>{project.title}</h3>
