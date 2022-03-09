@@ -2,29 +2,31 @@
   background-color: #ffffff;
   margin: 25px;
   width: 80%;
-  display: flex;
-  justify-content: center;
-  display: inline-block;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 0;
   border: 2px solid #000000;
   box-shadow: 15px 15px 0 -2px #d4d4d4, 15px 15px 0 0 black;
 }
 @media (min-device-width: 1080px) {
   .rectangle {
-    max-width: 40%;
+    height: 300px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .image {
   width: 100%;
-  object-fit: fill;
+  height: 100%;
+  position: relative;
 }
 @media (min-device-width: 1080px) {
   .image {
+    position: relative;
+    width: 100%;
     height: 100%;
-    min-width: 150px;
-    object-fit: cover;
   }
 }
 .info {
