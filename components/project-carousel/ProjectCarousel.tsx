@@ -31,7 +31,12 @@ export default function ProjectCarousel(props: Props) {
   };
 
   return (
-    <div className={styles.embla__viewport} onKeyDownCapture={handleKey}>
+    <div
+      className={styles.embla__viewport}
+      onKeyDownCapture={handleKey}
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <button className={styles.embla__prev} onClick={scrollPrev}>
         {"<"}
       </button>

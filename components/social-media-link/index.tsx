@@ -4,7 +4,11 @@ import Image from "next/image";
 
 export default function SocialMediaLink(props: any) {
   return (
-    <div className={styles.rectangle}>
+    <div
+      className={styles.rectangle}
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <div className={styles.icon}>
         <Image
           objectFit="cover"

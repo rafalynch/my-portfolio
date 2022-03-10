@@ -3,7 +3,11 @@ import styles from "./index.module.css";
 
 export default function HomeText() {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      data-aos="fade-right"
+      data-aos-duration="500"
+    >
       <div className={styles["title-container"]}>
         <div className={styles.title}>
           <h2 className={styles.hello}>Hello!</h2>
