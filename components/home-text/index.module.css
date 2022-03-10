@@ -1,0 +1,52 @@
+.container {
+  text-align: left;
+  max-width: 70%;
+}
+@media (min-width: 1080px) {
+  .container {
+    max-width: 50%;
+  }
+}
+
+.title-container {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  display: grid;
+  gap: 0px;
+}
+@media (min-width: 1080px) {
+  .title {
+    gap: 15px;
+    display: flex;
+    font-size: 32px;
+  }
+}
+
+.hello {
+  color: rgb(119, 119, 119);
+  margin: 0;
+}
+
+.name {
+  color: rgb(55, 64, 144);
+  margin: 0;
+}
+
+.subtitle {
+  color: aliceblue;
+  font-size: 20px;
+  margin: 0;
+}
+
+.info {
+  color: rgb(39, 39, 39);
+  text-align: justify end;
+  margin-top: 10px;
+}
+
+.info p {
+  margin: 0;
+}
