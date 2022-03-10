@@ -35,6 +35,7 @@
   height: 230px;
   justify-items: center;
   border-top: solid 2px;
+  text-align: justify;
 }
 @media (min-device-width: 1080px) {
   .info {

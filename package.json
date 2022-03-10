@@ -8,6 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/aos": "^3.0.4",
+    "aos": "^2.3.4",
     "contentful": "^9.1.12",
     "embla-carousel-autoplay": "^6.2.0",
     "embla-carousel-react": "^6.1.1",

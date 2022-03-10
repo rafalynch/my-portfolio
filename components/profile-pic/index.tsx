@@ -5,7 +5,11 @@ import profilePic from "../../public/profile.jpg";
 
 export default function ProfilePic() {
   return (
-    <div className={styles.image_container}>
+    <div
+      data-aos="fade-left"
+      data-aos-duration="500"
+      className={styles.image_container}
+    >
       <Image
         layout="responsive"
         width={200}
