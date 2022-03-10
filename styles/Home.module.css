@@ -7,12 +7,14 @@
 .about_me {
   display: grid;
   justify-items: center;
-  background-color: #beb9d1;
+  background-color: #adadad;
   padding-bottom: 40px;
 }
 .about_me__body {
   display: grid;
   justify-items: center;
+  gap: 30px;
+  padding: 25px 0 25px 0;
 }
 @media (min-device-width: 1080px) {
   .about_me__body {
@@ -22,7 +24,7 @@
   }
 }
 .portfolio {
-  background-color: #f5ebff;
+  background-color: #d0cfda;
   padding-bottom: 40px;
 }
 .portfolio__title {

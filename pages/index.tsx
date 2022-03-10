@@ -1,6 +1,7 @@
 import Logo from "../components/logo";
 import Title from "../components/title";
 import LongText from "../components/long-text";
+import HomeText from "../components/home-text";
 import ProfilePic from "../components/profile-pic";
 import ProjectLayout from "../components/project-layout";
 import styles from "../styles/Home.module.css";
@@ -34,35 +35,21 @@ function Home({ entries }: HomeProps) {
           <Logo />
         </header>
         <section className={styles.about_me}>
-          <Title>About me</Title>
+          <Title>ABOUT ME</Title>
           <div className={styles.about_me__body}>
+            <HomeText></HomeText>
             <ProfilePic></ProfilePic>
-            <LongText>
-              <p>
-                Hello! I&apos;m Rafa Lynch, a web developer from Buenos Aires,
-                Argentina. I have a passion for clean and well written code and
-                for creating amazing user experiences.
-              </p>
-              <p>
-                I consider myself a team worker, a problem solver and a fast
-                learner with high attention to detail.
-              </p>
-              <p>
-                I am interested in working with positive people who can
-                contribute to the improvement of my skills.
-              </p>
-            </LongText>
           </div>
           <MyCv></MyCv>
         </section>
         <section className={styles.portfolio}>
           <div className={styles.portfolio__title}>
-            <Title>Portfolio</Title>
+            <Title>PORTFOLIO</Title>
           </div>
           <ProjectLayout projects={projects}></ProjectLayout>
         </section>
         <section className={styles.contact}>
-          <Title>Contact</Title>
+          <Title>CONTACT</Title>
           <ContactBody></ContactBody>
         </section>
       </main>
