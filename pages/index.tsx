@@ -35,7 +35,6 @@ function Home({ entries }: HomeProps) {
           <Logo />
         </header>
         <section className={styles.about_me}>
-          <Title>ABOUT ME</Title>
           <div className={styles.about_me__body}>
             <HomeText></HomeText>
             <ProfilePic></ProfilePic>
