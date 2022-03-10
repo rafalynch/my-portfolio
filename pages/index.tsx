@@ -39,21 +39,6 @@ function Home({ entries }: HomeProps) {
           <div className={styles.about_me__body}>
             <HomeText></HomeText>
             <ProfilePic></ProfilePic>
-            {/* <LongText>
-              <p>
-                Hello! I&apos;m Rafa Lynch, a web developer from Buenos Aires,
-                Argentina. I have a passion for clean and well written code and
-                for creating amazing user experiences.
-              </p>
-              <p>
-                I consider myself a team worker, a problem solver and a fast
-                learner with high attention to detail.
-              </p>
-              <p>
-                I am interested in working with positive people who can
-                contribute to the improvement of my skills.
-              </p>
-            </LongText> */}
           </div>
           <MyCv></MyCv>
         </section>
