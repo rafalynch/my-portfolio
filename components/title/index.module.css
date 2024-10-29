@@ -9,7 +9,7 @@
   font-size: 24px;
   font-weight: bolder;
   border: 2px solid #1c1857;
-  background-color: #84ac89;
+  background-color: white;
   color: #1c1857;
-  box-shadow: -10px 10px 0 -2px #6e9272, -10px 10px 0 0 #1c1857;
+  box-shadow: -10px 10px 0 -2px #d4d4d4, -10px 10px 0 0 #000000;
 }

@@ -9,10 +9,10 @@ export default function HomeText() {
       data-aos-duration="500"
     >
       <div className={styles["title-container"]}>
-        <div className={styles.title}>
-          <h2 className={styles.hello}>Hello!</h2>
-          <h2 className={styles.name}>I&apos;m Rafa Lynch</h2>
-        </div>
+        <h1 className={styles.title}>
+          <span className={styles.hello}>Hello!</span>
+          <span className={styles.name}>I&apos;m Rafa Lynch</span>
+        </h1>
         <p className={styles.subtitle}>
           a web developer from Buenos Aires, Argentina.
         </p>

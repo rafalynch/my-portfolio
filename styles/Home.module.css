@@ -7,8 +7,7 @@
 .about_me {
   display: grid;
   justify-items: center;
-  background-color: #adadad;
-  padding-bottom: 40px;
+  background-color: #ffffff;
 }
 .about_me__body {
   display: grid;
@@ -24,8 +23,7 @@
   }
 }
 .portfolio {
-  background-color: #d0cfda;
-  padding-bottom: 40px;
+  background-color: #ffffff;
 }
 .portfolio__title {
   display: flex;
@@ -35,11 +33,12 @@
   display: grid;
   justify-items: center;
   align-content: center;
-  background-color: #ada9bb;
-  padding-bottom: 40px;
+  background-color: #ffffff;
+  padding: 56px 0px;
 }
 .footer {
-  padding: 20px;
+  margin-top: 24px;
+  padding: 56px 6px;
   display: grid;
   justify-items: center;
   background-color: #464646;

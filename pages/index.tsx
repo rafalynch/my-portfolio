@@ -37,18 +37,10 @@ function Home({ entries }: HomeProps) {
         <section className={styles.about_me}>
           <div className={styles.about_me__body}>
             <HomeText></HomeText>
-            <ProfilePic></ProfilePic>
           </div>
-          <MyCv></MyCv>
-        </section>
-        <section className={styles.portfolio}>
-          <div className={styles.portfolio__title}>
-            <Title>PORTFOLIO</Title>
-          </div>
-          <ProjectLayout projects={projects}></ProjectLayout>
         </section>
         <section className={styles.contact}>
-          <Title>CONTACT</Title>
+          <Title>Contact</Title>
           <ContactBody></ContactBody>
         </section>
       </main>
