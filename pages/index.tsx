@@ -13,7 +13,7 @@ import * as contentful from "contentful";
 import { Project } from "../types";
 
 interface HomeProps {
-  entries: contentful.EntryCollection<unknown>;
+  entries: contentful.EntryCollection<contentful.EntrySkeletonType>;
 }
 
 function Home({ entries }: HomeProps) {

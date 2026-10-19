@@ -11,9 +11,9 @@ export default function ProfilePic() {
       className={styles.image_container}
     >
       <Image
-        layout="responsive"
         width={200}
         height={200}
+        style={{ width: "100%", height: "auto" }}
         className={styles.image}
         src={profilePic}
         alt="rafa-lynch"

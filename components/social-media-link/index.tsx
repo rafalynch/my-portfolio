@@ -11,8 +11,7 @@ export default function SocialMediaLink(props: any) {
     >
       <div className={styles.icon}>
         <Image
-          objectFit="cover"
-          layout="responsive"
+          style={{ width: "100%", height: "auto", objectFit: "cover" }}
           src={props.icon}
           alt="icon"
         />
