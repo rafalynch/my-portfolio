@@ -11,5 +11,5 @@ export async function getAllEntries() {
 
 export async function getAsset(assetId: string) {
   const asset = await client.getAsset(assetId).catch(console.error);
-  return asset?.fields.file.url;
+  return asset?.fields.file?.url;
 }

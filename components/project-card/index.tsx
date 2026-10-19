@@ -15,8 +15,9 @@ export default function ProjectCard(props: Props) {
     <div className={styles.rectangle}>
       <div className={styles.image}>
         <Image
-          layout="fill"
-          objectFit="cover"
+          fill
+          sizes="(min-width: 1080px) 50vw, 80vw"
+          style={{ objectFit: "cover" }}
           src={project.image}
           alt="project-image"
         />
