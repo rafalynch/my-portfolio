@@ -330,6 +330,20 @@
   transform: translateX(4px);
 }
 
+.projects {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects li + li {
+  margin-top: 16px;
+}
+
+.projects p {
+  margin: 4px 0 0;
+}
+
 /* Footer */
 .footer {
   max-width: 920px;

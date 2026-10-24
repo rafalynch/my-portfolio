@@ -41,6 +41,25 @@ export const profile = {
   ] as ContactLink[],
 };
 
+export interface Project {
+  name: string;
+  handle: string;
+  href: string;
+  summary: string;
+  stack: string[];
+}
+
+export const projects: Project[] = [
+  {
+    name: "kenzio",
+    handle: "kenzio.app",
+    href: "https://kenzio.app",
+    summary:
+      "Multi-currency expense tracker for friends, couples, families and roommates: split shared costs, get reminders before recurring bills are due, and log or query expenses by talking to Claude through its MCP server.",
+    stack: ["Next.js", "Supabase", "PWA", "MCP"],
+  },
+];
+
 export function linkProps(link: ContactLink) {
   return link.external
     ? { href: link.href, target: "_blank", rel: "noreferrer" }
