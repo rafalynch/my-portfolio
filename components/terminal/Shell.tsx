@@ -1,6 +1,6 @@
 import { KeyboardEvent, ReactNode, useEffect, useRef, useState } from "react";
 import styles from "./index.module.css";
-import { profile, linkProps } from "./content";
+import { profile, projects, linkProps } from "./content";
 import Intro from "./Intro";
 
 interface Entry {
@@ -17,6 +17,7 @@ const HELP: [string, string][] = [
   ["whoami", "who I am and what I'm working on"],
   ["ls", "list files"],
   ["cat about.txt", "same as whoami, the long way"],
+  ["projects", "side projects I'm building"],
   ["contact", "where to find me"],
   ["github", "open my GitHub"],
   ["linkedin", "open my LinkedIn"],
@@ -32,7 +33,7 @@ const COMMANDS = [
   "echo",
 ];
 
-const SUGGESTIONS = ["help", "whoami", "contact", "github"];
+const SUGGESTIONS = ["help", "whoami", "projects", "contact", "github"];
 
 const dateFormatter = new Intl.DateTimeFormat("en-GB", {
   timeZone: "America/Argentina/Buenos_Aires",
@@ -79,6 +80,31 @@ function Links() {
             </span>
             <span className={styles.linkHandle}>{link.handle}</span>
           </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Projects() {
+  return (
+    <ul className={styles.projects}>
+      {projects.map((project) => (
+        <li key={project.name}>
+          <a
+            className={styles.link}
+            href={project.href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className={styles.linkLabel}>{project.name}</span>
+            <span className={styles.linkArrow} aria-hidden="true">
+              →
+            </span>
+            <span className={styles.linkHandle}>{project.handle}</span>
+          </a>
+          <p className={styles.text}>{project.summary}</p>
+          <p className={styles.muted}>{project.stack.join(" · ")}</p>
         </li>
       ))}
     </ul>
@@ -132,12 +158,16 @@ function Output({ entry, onRun }: { entry: Entry; onRun: Run }): ReactNode {
             <CommandButton command="cat about.txt" onRun={onRun}>
               about.txt
             </CommandButton>
+            <CommandButton command="ls projects/" onRun={onRun}>
+              projects/
+            </CommandButton>
             <CommandButton command="ls elsewhere/" onRun={onRun}>
               elsewhere/
             </CommandButton>
           </p>
         );
       }
+      if (path === "projects") return <Projects />;
       if (path === "elsewhere") return <Links />;
       return (
         <p className={styles.error}>
@@ -152,8 +182,8 @@ function Output({ entry, onRun }: { entry: Entry; onRun: Run }): ReactNode {
           </p>
         );
       }
-      if (path === "elsewhere") {
-        return <p className={styles.error}>cat: elsewhere: Is a directory</p>;
+      if (path === "projects" || path === "elsewhere") {
+        return <p className={styles.error}>cat: {path}: Is a directory</p>;
       }
       return (
         <p className={styles.error}>
@@ -162,6 +192,8 @@ function Output({ entry, onRun }: { entry: Entry; onRun: Run }): ReactNode {
             : "cat: missing file operand"}
         </p>
       );
+    case "projects":
+      return <Projects />;
     case "contact":
       return <Links />;
     case "date":
